@@ -1,29 +1,17 @@
 # Catnap
 
-TODO: Write a gem description
-
-## Installation
-
-Add this line to your application's Gemfile:
-
-    gem 'catnap'
-
-And then execute:
-
-    $ bundle
-
-Or install it yourself as:
-
-    $ gem install catnap
+## About
+Catnap is a simple [Sinatra](https://github.com/sinatra/sinatra "Sinatra") application that delays HTTP responses using [async_sinatra](https://github.com/raggi/async_sinatra "async_sinatra").
 
 ## Usage
+Open your browser and visit [`http://catnap.herokuapp.com/2`](http://catnap.herokuapp.com/2 "Catnap"). The response will be delayed for 2 seconds. You get it.
 
-TODO: Write usage instructions here
+## Installation
+To have your own Catnap application:
 
-## Contributing
+1. Clone this repository.
+2. `$ bundle install`
+3. `$ bundle exec rackup config.ru`
+4. Done.
 
-1. Fork it
-2. Create your feature branch (`git checkout -b my-new-feature`)
-3. Commit your changes (`git commit -am 'Add some feature'`)
-4. Push to the branch (`git push origin my-new-feature`)
-5. Create new Pull Request
+An example application is hosted at [Heroku](https://heroku.com/ "Heroku"). The application would go to sleep after some time without any HTTP requests, so the application will request itself every 60 seconds to avoid that. You might want to change that in the catnap.rb file.

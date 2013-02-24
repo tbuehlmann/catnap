@@ -4,7 +4,7 @@
 Catnap is a simple [Sinatra](https://github.com/sinatra/sinatra "Sinatra") application that delays HTTP responses using [async_sinatra](https://github.com/raggi/async_sinatra "async_sinatra").
 
 ## Usage
-Open your browser and visit [`http://catnap.herokuapp.com/2`](http://catnap.herokuapp.com/2 "Catnap"). The response will be delayed for 2 seconds. You get it.
+Open your browser and visit [http://catnap.herokuapp.com/2](http://catnap.herokuapp.com/2 "Catnap"). The response will be delayed for 2 seconds. You get it.
 
 ## Installation
 To have your own Catnap application:
